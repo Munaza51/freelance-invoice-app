@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clients — Freelance App</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <h1>Clients</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="clients.html">Clients</a>
+      <a href="invoices.html">Invoices</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Add / Edit Client</h2>
+      <form id="client-form">
+        <label>
+          Name (required)
+          <input id="client-name" name="name" required />
+        </label>
+        <label>
+          Email (required)
+          <input id="client-email" name="email" type="email" required />
+        </label>
+        <label>
+          Company
+          <input id="client-company" name="company" />
+        </label>
+        <label>
+          Notes
+          <textarea id="client-notes" name="notes"></textarea>
+        </label>
+        <button type="submit">Add Client</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>All Clients</h2>
+      <table class="table">
+        <thead>
+          <tr><th>Name</th><th>Email</th><th>Company</th><th>Notes</th><th>Actions</th></tr>
+        </thead>
+        <tbody id="clients-list">
+          <tr><td colspan="5">Loading…</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script type="module" src="./js/clients.js"></script>
+</body>
+</html>
