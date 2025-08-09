@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Freelance Dashboard — Invoice & Client Manager</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <h1>Freelance Dashboard</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="clients.html">Clients</a>
+      <a href="invoices.html">Invoices</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <div class="card">
+        <h3>Total clients</h3>
+        <p id="total-clients">0</p>
+      </div>
+      <div class="card">
+        <h3>Total invoices</h3>
+        <p id="total-invoices">0</p>
+      </div>
+      <div class="card">
+        <h3>Total value</h3>
+        <p id="total-value">$0.00</p>
+      </div>
+      <div class="card">
+        <h3>Paid / Unpaid</h3>
+        <p><span id="paid-count">0</span> / <span id="unpaid-count">0</span></p>
+      </div>
+    </section>
+
+    <section class="quote card" id="quote-card">
+      <!-- Random motivational quote will be injected here -->
+      <p>Loading inspirational quote...</p>
+    </section>
+
+    <section class="help card">
+      <h3>Quick tips</h3>
+      <ul>
+        <li>Clients & invoices are saved in <code>localStorage</code>.</li>
+        <li>Put <code>data/quotes.json</code> in the project root under <code>/data/</code>.</li>
+        <li>Run with a local server (modules require HTTP) — see README.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">Built for the CWBootcamps assignment • Freelance Invoice App</footer>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
